@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#615F5F"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/scorebar"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#FFF06C"
+        >
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/score"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/life3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/lifeheart"
+                android:visibility="visible">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/life2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/lifeheart"
+                android:visibility="visible">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/life1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/lifeheart"
+                android:visibility="visible">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/whiteBar"
+            android:layout_width="18dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/whiteBar1"
+            android:layout_width="18dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:background="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/whiteBar2"
+            android:layout_width="18dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:background="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/whiteBar3"
+            android:layout_width="18dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/car2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:visibility="invisible"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/enemycar"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/enemy2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/enemycartwo"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/enemy3"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/enemycarthree"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/coin"
+            tools:ignore="ContentDescription" />
+
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|center"
+            android:visibility="invisible"
+            android:src="@drawable/heart"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/carone"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:visibility="invisible"
+            android:src="@drawable/car"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/cartwo"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:visibility="invisible"
+            android:src="@drawable/carone"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/carthree"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:visibility="invisible"
+            android:src="@drawable/cartwo"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/carfour"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:visibility="invisible"
+            android:src="@drawable/carthree"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/agun"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="invisible"
+            android:src="@drawable/agun"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/actualCar"
+            android:layout_width="45dp"
+            android:layout_height="113dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@drawable/cartwo"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="227dp"
+            android:layout_height="91dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="TAP TO PLAY"
+            android:textColor="@color/white"
+            android:background="#E8D000"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/leftButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+
+                android:alpha="0.0"
+                android:onClick="leftCarControl" />
+
+
+            <Button
+                android:id="@+id/rightButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+
+
+                android:alpha="0.0"
+                android:onClick="rightCarControl" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
